@@ -52,7 +52,7 @@ class PackageServiceProvider extends ServiceProvider
 
     private function loadMigrations()
     {
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/migrations');
+        //$this->loadMigrationsFrom(__DIR__ . '/../Database/migrations');
 
         $this->publishes([
             __DIR__ . '/../Database/migrations' => base_path('database/migrations')
